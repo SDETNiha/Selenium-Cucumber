@@ -9,10 +9,10 @@ import org.junit.runner.RunWith;
         features = "src/test/resource/features", // Path to feature files
         glue = {"stepDefinition","hooks"},              // Package containing step definition classes
         plugin = {"pretty", "html:target/cucumber-reports.html"}, // Reporting formats
-        tags = "@Login",                     // Filter specific scenarios to run
+        tags = "@smoke",                     // Filter specific scenarios to run
         monochrome = true,                        // Makes console output more readable
         dryRun = false                           // Checks if all steps have definitions without executing
 )
 
-public class CucumberRunner {
+public class CucumberRunner   {
 }

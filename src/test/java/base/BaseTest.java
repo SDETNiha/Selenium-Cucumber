@@ -22,7 +22,8 @@ public class BaseTest {
         return driver.get();
     }
 
-    public static void quitDriver() {
+    public static void quitDriver() throws InterruptedException {
+        Thread.sleep(4000);
         getDriver().quit();
         driver.remove();
     }

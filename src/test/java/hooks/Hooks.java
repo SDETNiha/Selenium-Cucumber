@@ -22,7 +22,7 @@ public class Hooks {
     }
 
     @After
-    public void tearDown(Scenario scenario) {
+    public void tearDown(Scenario scenario) throws InterruptedException {
 
         if (scenario.isFailed()) {
             ScreenshotUtil.captureScreenshot(
